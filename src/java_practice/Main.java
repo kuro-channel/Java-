@@ -3,6 +3,7 @@ package java_practice;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
+import java.util.Scanner;
 
 public class Main {
 
@@ -38,10 +39,7 @@ public class Main {
 
 		switch (month2) {
 		case JANUARY:
-
-
 			break;
-
 		default:
 			break;
 		}
@@ -49,6 +47,17 @@ public class Main {
 		// 桁数
 		long amount = 123_456_789L;
 		System.out.println(amount);
+
+		// P.42~44
+		Scanner in = new Scanner(System.in);
+		System.out.println("パスワードを入力してください。");
+		String str = in.nextLine();
+
+		while(!str.equals("abc")){
+			System.out.println("パスワードが違います。正しいパスワードを入力してください。");
+			str = in.nextLine();
+		}
+		System.out.println("OK");
 	}
 
 }
