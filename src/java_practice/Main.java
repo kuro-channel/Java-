@@ -58,6 +58,17 @@ public class Main {
 			str = in.nextLine();
 		}
 		System.out.println("OK");
-	}
 
+	}
+	// p.049 メソッドのオーバーロード メソッドの宣言
+	void printScore(int maxScore){
+		String name = "";
+		int maxscore = 0;
+		int score = 0;
+		System.out.println(name + "さんは" + maxscore + "点満点中" + score + "点です");
+	}
+	void printScore(){
+		final int MAX_SCORE = 0;
+		printScore(MAX_SCORE);
+	}
 }
