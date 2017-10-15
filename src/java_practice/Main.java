@@ -59,6 +59,27 @@ public class Main {
 		}
 		System.out.println("OK");
 
+		// p.064 リテラル：ソースコードに直接記述された値のこと
+		// p.69 ~ ラッパークラスを利用する
+
+		// int → Integer
+		Integer nums1 = Integer.valueOf(10);
+		int nums2 = nums1.intValue();
+		System.out.println(nums2);
+
+		// String → Integer
+		Integer nums3 = Integer.valueOf("11");
+		int nums4 = nums3.intValue();
+		System.out.println(nums4);
+
+		// String → int
+		int nums5 = Integer.parseInt("12");
+		System.out.println(nums5);
+
+		// String → int
+		String nums9 = Integer.toString(13);
+		System.out.println(nums9);
+
 	}
 	// p.049 メソッドのオーバーロード メソッドの宣言
 	void printScore(int maxScore){
@@ -71,4 +92,7 @@ public class Main {
 		final int MAX_SCORE = 0;
 		printScore(MAX_SCORE);
 	}
+
+
+
 }
