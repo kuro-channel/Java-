@@ -93,6 +93,9 @@ public class Main {
 		printScore(MAX_SCORE);
 	}
 
-
+	// p.73 クラスのインスタンス化
+	SampleClass sampleClass = new SampleClass();
+	String response = sampleClass.action();
+	String test = sampleClass.test; // protected
 
 }
