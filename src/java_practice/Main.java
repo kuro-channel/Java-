@@ -80,6 +80,27 @@ public class Main {
 		String nums9 = Integer.toString(13);
 		System.out.println(nums9);
 
+		// p.99 enum型 クラスみたいにNewする必要ないぞ！
+		HttpStatus httpStatus = HttpStatus.OK;
+		System.out.println("HttpStatus = " + httpStatus + "[" + httpStatus.getValue() + "]");
+
+		// p.101 StringStackを利用する例
+		StringStack stringStack = new StringStack();
+		String strElement = stringStack.pop();
+
+		// strElement.equals("Java"); ヌルポ！
+
+		stringStack.push("Scala");
+		stringStack.push("Groovy");
+		stringStack.push("Java");
+
+		strElement = stringStack.pop();
+		if(strElement != null){
+			System.out.println(strElement); // Java
+		}
+
+		// p.102 GenericStackを利用する例 仮型パラメータを使用して、任意の型を設定
+		
 	}
 	// p.049 メソッドのオーバーロード メソッドの宣言
 	void printScore(int maxScore){
@@ -97,5 +118,4 @@ public class Main {
 	SampleClass sampleClass = new SampleClass();
 	String response = sampleClass.action();
 	String test = sampleClass.test; // protected
-
 }
